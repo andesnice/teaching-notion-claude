@@ -32,6 +32,15 @@
   .note{font-size:14px;color:var(--sub);margin-top:30px;border-top:1px solid var(--line);padding-top:14px}
   @media (max-width:520px){h1{font-size:23px}.page{padding:28px 18px 44px}ol.flow li{flex-direction:column;gap:2px}.time{flex:none}}
   @media print{body{background:#fff}.page{padding:0;max-width:none}}
+
+  .shots{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:12px 0}
+  .shots figure{margin:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#0f1115}
+  .shots img{display:block;width:100%;height:auto}
+  .shots figcaption{background:#fff;color:var(--sub);font-size:14px;padding:8px 12px;border-top:1px solid var(--line)}
+  .shots .wide{grid-column:1/-1}
+  .shots .phone{max-width:260px;margin:0 auto}
+  .demo-note{font-size:13px;color:var(--sub)}
+  @media (max-width:520px){.shots{grid-template-columns:1fr}.shots .phone{max-width:240px}}
 </style>
 </head>
 <body>
@@ -59,6 +68,17 @@
 
   <h2>為什麼可以跟我學</h2>
   <p>我自己用 Notion、Claude 和 Codex 做了一套能實際運作的派工系統，從規格、實作、測試到上線都走過一遍。課程教的是我實際用過的做法，不是只介紹功能。</p>
+
+
+  <h2>課程範例：我自己做出來的派工系統</h2>
+  <p>下面是我用 Notion、Claude 和 Codex 做出的內部派工系統實際畫面（以示範資料呈現）。課程不會要你做同樣大的東西，而是帶你用同樣的方法，做出一個你自己的小版本。</p>
+  <div class="shots">
+    <figure class="wide"><img src="shots/calendar.png" alt="行事曆：任務依期限排在月曆上" loading="lazy"><figcaption>行事曆：任務依期限排在月曆上，可切換「我的／全部」</figcaption></figure>
+    <figure><img src="shots/mine.png" alt="我的工作：一鍵開始做、完成" loading="lazy"><figcaption>我的工作：一鍵「開始做」「完成」</figcaption></figure>
+    <figure><img src="shots/newtask.png" alt="新增任務表單" loading="lazy"><figcaption>新增任務：欄位簡單，幾秒就能派工</figcaption></figure>
+    <figure class="phone wide"><img src="shots/mobile-overview.png" alt="手機版總覽" loading="lazy"><figcaption>手機版總覽：統計卡加優先處理清單</figcaption></figure>
+  </div>
+  <p class="demo-note">畫面為示範資料，非真實業務內容。</p>
 
   <h2>需要準備</h2>
   <ul>
